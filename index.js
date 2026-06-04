@@ -40,6 +40,7 @@ function registrarVenta(idProducto, cantidad) {
 
 agregarProducto("Pan", 1000, 20);
 agregarProducto("Leche", 1500, 10);
+agregarProducto("Azúcar", 1200, 15);
 
 registrarVenta(1, 5);
 
