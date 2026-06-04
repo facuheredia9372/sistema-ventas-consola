@@ -37,6 +37,13 @@ function registrarVenta(idProducto, cantidad) {
     producto.stock -= cantidad;
     console.log("Venta registrada correctamente");
 }
+function consultarStock() {
+    console.log("\n=== STOCK ACTUAL ===");
+
+    for (const producto of productos) {
+        console.log(`${producto.nombre}: ${producto.stock} unidades`);
+    }
+}
 
 agregarProducto("Pan", 1000, 20);
 agregarProducto("Leche", 1500, 10);
@@ -45,3 +52,4 @@ agregarProducto("Azúcar", 1200, 15);
 registrarVenta(1, 5);
 
 listarProductos();
+consultarStock();
