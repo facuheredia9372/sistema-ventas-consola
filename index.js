@@ -21,8 +21,26 @@ function listarProductos() {
     }
 }
 
+function registrarVenta(idProducto, cantidad) {
+    const producto = productos.find(p => p.id === idProducto);
+
+    if (!producto) {
+        console.log("Producto no encontrado");
+        return;
+    }
+
+    if (producto.stock < cantidad) {
+        console.log("Stock insuficiente");
+        return;
+    }
+
+    producto.stock -= cantidad;
+    console.log("Venta registrada correctamente");
+}
+
 agregarProducto("Pan", 1000, 20);
 agregarProducto("Leche", 1500, 10);
-agregarProducto("Azúcar", 1200, 15);
+
+registrarVenta(1, 5);
 
 listarProductos();
