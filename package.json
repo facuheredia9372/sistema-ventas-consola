@@ -1,0 +1,21 @@
+{
+  "name": "sistema-ventas-consola",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de ventas y stock desarrollado en JavaScript para consola.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facuheredia9372/sistema-ventas-consola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/facuheredia9372/sistema-ventas-consola/issues"
+  },
+  "homepage": "https://github.com/facuheredia9372/sistema-ventas-consola#readme"
+}
